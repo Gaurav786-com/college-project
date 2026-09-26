@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background changer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <button class="changer" onclick="changecolor()">Click me</button>
+    </div>
+
+    <script>
+      function changecolor() {
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        console.log(red, green, blue  );
+      }
+    </script>
+  </body>
+</html>
